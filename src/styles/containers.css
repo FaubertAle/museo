@@ -1,0 +1,144 @@
+.viewer-container {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.beside{
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 8px;
+}
+
+.cv-2dA{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.editor-container {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -50%;
+    transition: bottom .2s ease-in;
+    z-index: 4;
+}
+
+.editor-container.active {
+    bottom: -2%;
+}
+
+.input-container {
+    height: 60%;
+    overflow: auto;
+    &>div{
+        border: 2px solid black;
+    }
+}
+
+.descript{
+    flex-direction: column;
+    height: 40%;
+    padding: 5px;
+    border-top: 2px solid white;
+    h3{
+        color: white;
+        height: 12%;
+        user-select: none;
+    }
+    p{
+        background-color: white;
+        border-radius: 10px;
+        height: 88%;
+        padding: 6px;
+        overflow: auto;
+        user-select: none;
+    }
+}
+
+/* flexbox */
+.input-range, .input-value, .vector-container, .input-vector, .input-comps, .input-color
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.range-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.input-range, .input-value{
+    border-radius: 10px;
+    background-color: white;
+}
+
+.value-container, .color-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.vector-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.input-vector{
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.input-color{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+
+.snap-container{
+    position: absolute;
+    width: 30%;
+    padding: 5px;
+    border: solid 3px black;
+    z-index: 20;
+}
+
+.checkbox-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+.card{
+    flex-direction: column;
+    border: solid red 4px;
+    padding: 4px;
+    border-radius: 40px;
+    cursor: pointer;
+    p, h3, div{
+        user-select: none;
+    }
+}
+
+.card.active{
+    background-color: aquamarine;
+}
+
+

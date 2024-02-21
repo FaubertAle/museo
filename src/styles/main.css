@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'PT Serif', serif;
+}
+:root {
+
+  --pal-mag: #c2057a;
+  --pal-blanco: #eee9e3;
+  --pal-marron: #b49372;
+  --pal-marron2: #754c36;
+
+  color-scheme: light dark;
+  color: #242424;
+  background-color: var(--pal-blanco);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,69 @@
+
+.layout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* flexbox */
+.header, .footer, .nav-bar, .content, .link, .desp-button
+.three_card, .viewer-buttons, .descript, .b-snap, .card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid white;
+    z-index: 10;
+    border-radius: 15px 0% 15px;
+}
+
+
+
+
+.header {
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(201, 144, 215);
+}
+
+.logo {
+    width: 15%;
+}
+
+.nav {
+    justify-content: end;
+    width: 70%;
+    
+}
+
+.nav-bar {
+    font-size: 1.5rem;
+    gap: 4%;
+}
+
+.content {
+    position: relative;
+    height: 90%;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    bottom: -10%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    transition: bottom .4s ease-in;
+}
+
+.footer.active {
+    bottom: 0;
+}
